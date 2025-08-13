@@ -1,0 +1,49 @@
+
+
+body {
+font-family: sans-serif;
+text-align: center;
+
+}
+.container {
+    margin-top: 50px;
+}
+.b-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.b {
+    background-color: rgb(186, 224, 182);
+color: black;
+border: none;
+padding: 15px 30px;
+margin: 0 10px;
+border-radius: 5px;
+cursor:pointer;
+}
+.other-amount {
+    display: flex;
+    align-items: center;
+}
+.other-amount input[type="number"] {
+    padding: 15px;
+    border: 1px solid #aeeed4;
+    border-radius: 5px;
+    width: 500px;
+    width: 700px;
+    text-align: center;
+}
+.b:hover {
+        background-color: rgb(84, 209, 163);
+}
+        
+.done-button {
+background-color: rgb(74, 218, 132);
+color: black;
+border: none;
+padding: 15px 30px;
+margin: 0 10px;
+border-radius: 5px;
+cursor: pointer;
+}

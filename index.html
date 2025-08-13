@@ -18,10 +18,11 @@
             color: #333;
         }
 
-        .container {
-            max-width: 1200px;
+        .containers {
+            max-width: 2000px;
             margin: 0 auto;
             padding: 20px;
+            text-align: left;
         }
 
         header {
@@ -36,7 +37,7 @@
         .logo {
             font-size: 24px;
             font-weight: 700;
-            color: #006a4e;
+            color: #111312;
         }
 
         .nav-links {
@@ -65,7 +66,7 @@
         .hero h1 {
             font-size: 48px;
             margin-bottom: 20px;
-            color: #006a4e;
+            color: #111111;
         }
 
         .hero p {
@@ -175,6 +176,17 @@
             font-size: 14px;
         }
 
+           .hero {
+      padding: 6rem 0;
+      text-align: left;
+      background: linear-gradient(135deg, #1d53c7, #9370db);
+      color: rgb(144, 221, 185);
+        background-image: url('https://raw.githubusercontent.com/ProgrammingHero1/B11A1--assignment-1/8877788561563a7741cacad266fd7ec952681671/assets/hero.png');
+  background-size: cover;
+  background-position: left;
+    }
+
+
         @media (max-width: 768px) {
             .features {
                 grid-template-columns: 1fr;
@@ -192,24 +204,26 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="containers">
         <header>
             <div class="logo">Bangladesh 2.0</div>
             <nav class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Features</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                
+               
+                <button class="done-button">Sign up</button>
             </nav>
         </header>
 
         <section class="hero">
-            <h1>Building the Future of Bangladesh</h1>
+            <h1>Idea , innovation ,
+vision and challenges in New Bangladesh.</h1>
             <p>Join us in our mission to transform Bangladesh through technology, innovation, and sustainable development. Together we can create a brighter future for all.</p>
-            <a href="#" class="cta-button">Get Involved</a>
+            <a href="#" class="cta-button">Explore New Bangladesh</a>
         </section>
 
-        <section class="features">
+        
+            <h2>Pillars of "Bangladesh 2.0"</h2>
+            <section class="features">
             <div class="feature-card">
                 <div class="feature-icon">🌱</div>
                 <h3>Sustainable Development</h3>
@@ -226,6 +240,259 @@
                 <p>Our programs are designed by and for the people of Bangladesh, ensuring real impact.</p>
             </div>
         </section>
+
+
+        
+            <h2>The Vision of Future</h2>
+            <p>Bangladesh 2.0 aims to redefine the nation’s trajectory by embracing cutting-edge technology, promoting inclusive growth, and ensuring sustainability. With initiatives in renewable energy, digital transformation, and robust infrastructure, the country is set to become a global model of development.</p>
+            <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🌱</div>
+                <h3>Sustainable Development</h3>
+                <p>We prioritize eco-friendly solutions that promote long-term growth while protecting our environment.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💡</div>
+                <h3>Tech Innovation</h3>
+                <p>Harnessing cutting-edge technology to solve Bangladesh's most pressing challenges.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤝</div>
+                <h3>Community Focus</h3>
+                <p>Our programs are designed by and for the people of Bangladesh, ensuring real impact.</p>
+            </div>
+        </section>
+
+
+    <title>Bangladesh 2.0 - Recent News</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h1 {
+            font-size: 36px;
+            color: #080c0b;
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            font-size: 18px;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .news-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .news-card {
+            display: flex;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-image {
+            flex: 1;
+            min-height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .news-content {
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .news-header h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #111313;
+        }
+
+        .news-meta {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .channel-logo {
+            width: 30px;
+            height: 30px;
+            background-color: #eada2e;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        .news-date {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .news-excerpt {
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        .read-more {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #006a4e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            align-self: flex-start;
+        }
+
+        .read-more:hover {
+            background-color: #005540;
+        }
+
+        /* Alternate card layout */
+        .news-card.reverse {
+            flex-direction: row-reverse;
+        }
+
+        /* Placeholder images */
+        .card1-image {
+            background-image: url('https://raw.githubusercontent.com/ProgrammingHero1/B11A1--assignment-1/8877788561563a7741cacad266fd7ec952681671/assets/satelite.png');
+        }
+
+        .card2-image {
+            background-image: url('https://raw.githubusercontent.com/ProgrammingHero1/B11A1--assignment-1/8877788561563a7741cacad266fd7ec952681671/assets/satelite.png');
+        }
+
+        @media (max-width: 768px) {
+            .news-card, .news-card.reverse {
+                flex-direction: column;
+            }
+
+            .news-image {
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section-title">
+            <h1>Recent News</h1>
+            <p>Bangladesh 2.0 aims to redefine the nation's trajectory by embracing cutting-edge technology, promoting inclusive growth, and ensuring sustainability. With initiatives in renewable energy, digital transformation, and robust infrastructure, the country is set to become a global model of development.</p>
+        </div>
+
+        <div class="news-container">
+            <!-- Card 1 - Image left / Content right -->
+            <div class="news-card">
+                <div class="news-image card1-image"></div>
+                <div class="news-content">
+                    <div class="news-header">
+                        <h2>Bangladesh Launches New Satellite</h2>
+                        <div class="news-meta">
+                            <div class="channel-logo">AJ</div>
+                            <div class="news-date">Date: 05/01/2025 | Time: 10.25 PM</div>
+                        </div>
+                    </div>
+                    <p class="news-excerpt">
+                        Not until the creation and maintenance of decent conditions of life for all people are recognized and accepted as a common obligation of all people and all countries—not until then shall we, with a certain degree of justification, be able to speak of humankind as civilized.
+                    </p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <!-- Card 2 - Image right / Content left -->
+            <div class="news-card reverse">
+                <div class="news-image card2-image"></div>
+                <div class="news-content">
+                    <div class="news-header">
+                        <h2>Bangladesh Launches New Satellite</h2>
+                        <div class="news-meta">
+                            <div class="channel-logo">AJ</div>
+                            <div class="news-date">Date: 05/01/2025 | Time: 10.25 PM</div>
+                        </div>
+                    </div>
+                    <p class="news-excerpt">
+                        Not until the creation and maintenance of decent conditions of life for all people are recognized and accepted as a common obligation of all people and all countries—not until then shall we, with a certain degree of justification, be able to speak of humankind as civilized.
+                    </p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+      
+<head>
+    <h1 style="text-align: center;">Subscribe Newsletter</h1>
+<link rel="stylesheet" href="donate.css">
+</head>
+<body>
+    <div class="container">  
+<p>
+    Bangladesh 2.0 aims to by embra
+    cing technologypromoting inclusive growth,
+    and ensuring sustainabledevelopment
+    .With a focus on transformation,and robust infrastructure,
+    the country is set to become a global model of development.  
+</p>
+<br>
+<div class="b-group">
+<button class="b"onclick="this.classList.toggle(active)">100 Taka</button>
+<button class="b">200 Taka</button>
+<button class="b">500 Taka</button>
+<button class="b">1000 Taka</button>
+</div>
+<div class="other-amount">
+    <input type="number" placeholder="other-amount(Taka)">
+    </div>
+    <br> 
+    <button class="done-button">Done Now</button>
+
+    </div>
 
         <section class="stats">
             <div class="stats-container">
